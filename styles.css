@@ -8,14 +8,14 @@ body {
 }
 
 .animation-container {
+    background: black;
     padding: 0;
     margin: 0;
-    height: 500px;
-    width: 500px;
+    height: 90%;
+    width: 90%;
     overflow: auto;
     resize: both;
-    border: 30px solid black;
-    box-sizing: border-box;
+    border: 10px solid rgb(39, 39, 39);
 }
 
 #dvd-logo {

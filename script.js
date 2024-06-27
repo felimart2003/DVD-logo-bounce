@@ -1,19 +1,11 @@
 let logo = document.getElementById("dvd-logo");
 let container = document.querySelector(".animation-container");
-let rect = container.getBoundingClientRect();
 let x_move = 1;
 let y_move = 1;
 
 function init() {
     change_color();
     setInterval(animation, 10);
-    console.log('Top: ' + rect.top);
-    console.log('Right: ' + rect.right);
-    console.log('Bottom: ' + rect.bottom);
-    console.log('Left: ' + rect.left);
-    console.log('Width: ' + rect.width);
-    console.log('Height: ' + rect.height);
-
 }
 
 function change_color() {
@@ -32,9 +24,6 @@ function check_bounce() {
     let left_pos = logo.offsetLeft;
     let top_pos = logo.offsetTop;
     
-    console.log("container horizontal: " + (container_left + container_width), left_pos + logo_width);
-    console.log("Cont left: " + container_left);
-
     // Handling collisions with right and left walls
     if (left_pos < container_left + border_width || left_pos + logo_width >= container_left + container_width + border_width) {
         x_move = -x_move;
@@ -52,9 +41,6 @@ function animation() {
 
     logo.style.left = (logo.offsetLeft + x_move) + "px";
     logo.style.top = (logo.offsetTop + y_move) + "px";
-
-    console.log("left: " + logo.style.left + "px");
-    console.log("top: " + logo.style.top + "px");
 }
 
 init();
