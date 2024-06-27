@@ -1,0 +1,20 @@
+body {
+    background: rgb(71, 71, 71); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.animation-container {
+    height: 90%;
+    width: 90%;
+    overflow: auto;
+    resize: both;
+    border: 2px solid black;
+}
+
+#dvd-logo {
+    position: absolute;
+}
