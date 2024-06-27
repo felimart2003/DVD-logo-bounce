@@ -10,11 +10,12 @@ body {
 .animation-container {
     padding: 0;
     margin: 0;
-    height: 570px;
-    width: 260px;
+    height: 500px;
+    width: 500px;
     overflow: auto;
     resize: both;
-    border: 10px solid black;
+    border: 30px solid black;
+    box-sizing: border-box;
 }
 
 #dvd-logo {
